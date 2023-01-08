@@ -1,2 +1,9 @@
 Change filter then change page, without clicking submit on users 
 Login as female, logout, then login as male - default users will show men
+Roles close button will update the roles - admin module
+
+Note - TechStack
+
+Angular x Dotnet 
+Cloudinary
+SignalR
