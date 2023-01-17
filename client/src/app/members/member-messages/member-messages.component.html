@@ -1,7 +1,7 @@
 <div class="card">
     <div class="card-body"
         #scrollMe
-        style="overflow-y: scroll; height: 535px"
+        style="overflow-y: scroll; height: 65vh"
         [scrollTop]="scrollMe.scrollHeight"
     >
         <div *ngIf="(messageService.messageThread$ | async)?.length === 0">

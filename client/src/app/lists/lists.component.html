@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="d-flex justify-content-center" *ngIf="pagination">
+<div class="d-flex justify-content-center" *ngIf="pagination && members && members.length > 0">
     <pagination 
         [boundaryLinks]="true" 
         [totalItems]="pagination.totalItems"
@@ -37,4 +37,7 @@
         firstText="&laquo;" 
         lastText="&raquo;">
     </pagination>
+</div>
+<div *ngIf="members && members.length == 0">
+    <p class="d-flex justify-content-center">No members are here yet :)</p>
 </div>

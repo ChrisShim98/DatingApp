@@ -1,17 +1,29 @@
-<div class="container">
-    <div *ngIf="!registerMode" style="text-align: center;">
-        <h1>Find your match</h1>
-        <p class="lead">Come on in to view your matches... all you need to do is sign up!</p>
-        <div class="text-center">
-            <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2">Register</button>
-            <button class="btn btn-primary btn-lg me-2 btn-info">Learn more</button>
+<div class="row align-items-center">
+    <div *ngIf="!registerMode && !loginMode" class="row">   
+        <div class="col-sm text-sm-center text-lg-start">
+            <h1>Find your match</h1>
+            <p class="lead">Come on in to view your matches... all you need to do is sign up!</p>
+            <div class="text-center text-md-start">
+                <button (click)="loginToggle()" class="btn btn-primary btn-lg me-2">Login</button>
+                <button (click)="registerToggle()" class="btn btn-primary btn-lg me-2 btn-info">Register</button>
+            </div>
         </div>
+        <img class="col-sm" style="height: 70vh;" src="../../assets/love.svg" alt="love">
     </div>
+    
 
     <div *ngIf="registerMode" class="container">
         <div class="row justify-content-center">
             <div class="col-4">
                 <app-register (cancelregister)="cancelRegisterMode($event)"></app-register>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="loginMode" class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <app-login (cancelLogin)="cancelLoginMode($event)"></app-login>
             </div>
         </div>
     </div>

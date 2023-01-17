@@ -10,6 +10,7 @@ import { AccountService } from '../_services/account.service';
 })
 export class NavComponent implements OnInit {
   model: any = {};
+  menuOpened: boolean = false;
 
   constructor(public accountService: AccountService, private router: Router) { }
 
@@ -27,6 +28,10 @@ export class NavComponent implements OnInit {
   logout() {
     this.accountService.logout();
     this.router.navigateByUrl('/')
+  }
+
+  toggleMenu() {
+    this.menuOpened = !this.menuOpened;
   }
 
 }

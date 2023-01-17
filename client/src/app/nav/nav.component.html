@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
-      <a class="navbar-brand" routerLink="/" routerLinkActive="active">Dating App</a>
+      <img src="./assets/heart.png" class="logo-img" alt="logo">
+      <a class="navbar-brand logo-text pb-2 mb-1 me-auto me-md-2" routerLink="/" routerLinkActive="active">SundayCruise</a>
 
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0 d-md-flex d-none">
           <ng-container *ngIf="accountService.currentUser$ | async" dropdown>
             <li class="nav-item">
               <a class="nav-link" 
@@ -20,13 +21,10 @@
               <a class="nav-link" routerLink="/admin" routerLinkActive="active">Admin</a>
             </li>
           </ng-container>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/errors" routerLinkActive="active">Errors</a>
-          </li>
         </ul>
 
         <div class="dropdown" *ngIf="(accountService.currentUser$ | async) as user" dropdown>
-          <img src="{{user.photoUrl || './assets/user.png'}}" alt="userphoto">
+          <img src="{{user.photoUrl || './assets/user.png'}}" class="img-border" alt="userphoto">
             <a class="dropdown-toggle text-light text-decoration-none ms-2" dropdownToggle> Welcome {{ user.knownAs | titlecase }}</a>
             <div class="dropdown-menu mt-3" *dropdownMenu="">
                 <a class="dropdown-item" routerLink="/member/edit">Edit Profile</a>
@@ -34,7 +32,7 @@
             </div>
         </div>
 
-        <form #loginForm="ngForm" class="d-flex" (ngSubmit)="login()" autocomplete="off" *ngIf="!(accountService.currentUser$ | async)">
+        <form #loginForm="ngForm" class="d-md-flex d-none" (ngSubmit)="login()" autocomplete="off" *ngIf="!(accountService.currentUser$ | async)">
           <input
             name="username"
             [(ngModel)]="model.username"

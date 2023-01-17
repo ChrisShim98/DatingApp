@@ -9,9 +9,6 @@
         <label class="form-check-label" style="margin-right:10px">
             <input type="radio" class="form-check-input" value="female" formControlName="gender"> Female
         </label>
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" value="other" formControlName="gender"> Other
-        </label>
     </div>
     <app-text-input [formControl]="$any(registerForm.controls['username'])" 
         [label]="'Username'"></app-text-input>

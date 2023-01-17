@@ -2,8 +2,22 @@
     cursor: pointer;
 }
 
-img {
+.img-border {
     max-height: 50px;
     border: 2px solid white;
     display: inline;
+}
+.logo-img {
+    max-height: 50px;
+    display: inline;
+    padding-right: 6px;
+}
+.logo-text {
+    color: #ff0000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-size: 24px;
+
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }

@@ -1,0 +1,12 @@
+.dating-container {
+  min-height: 85vh;
+  width: 98vw;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+}
+
+@media (max-width:767px) {
+    .inlineOverride {
+      padding-top: 100px;
+    }       
+ }  

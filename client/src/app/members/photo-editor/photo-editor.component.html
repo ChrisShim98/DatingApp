@@ -32,11 +32,8 @@
             Drop photos here
         </div>
 
-        Multiple
+        Or click here to upload
         <input type="file" ng2FileSelect [uploader]="uploader" multiple  /><br/>
-
-        Single
-        <input type="file" ng2FileSelect [uploader]="uploader" />
     </div>
 
     <div class="col-9" style="margin-bottom: 40px" *ngIf="uploader?.queue?.length">
