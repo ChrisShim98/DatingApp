@@ -25,6 +25,14 @@ export class NavComponent implements OnInit {
     })
   }
 
+  loginAsGuest() {
+    this.model = {
+      "username": "Demo",
+      "password": "Test123"
+    };
+    this.login();
+  }
+
   logout() {
     this.accountService.logout();
     this.router.navigateByUrl('/')
