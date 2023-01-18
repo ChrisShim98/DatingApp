@@ -1,6 +1,6 @@
-# fly.toml file generated for autumn-voice-9065 on 2023-01-16T00:06:53-05:00
+# fly.toml file generated for empty-feather-4821 on 2023-01-17T19:19:55-05:00
 
-app = "autumn-voice-9065"
+app = "empty-feather-4821"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -9,9 +9,9 @@ processes = []
   image = "chrisshim98/datingapp:latest"
 
 [env]
-  ASPNETCORE_URLS="http://+:8080"
-  CloudinarySettings__CloudName="diywkaahn"
-  CloudinarySettings__ApiKey="618266582157863"
+  ASPNETCORE_URLS = "http://+:8080"
+  CloudinarySettings__ApiKey = "618266582157863"
+  CloudinarySettings__CloudName = "diywkaahn"
 
 [experimental]
   auto_rollback = true
