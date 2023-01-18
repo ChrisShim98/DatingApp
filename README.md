@@ -44,6 +44,9 @@ Internet-connected apps maintained by Microsoft. ASP.NET Core, is also packaged,
 objects. It helps to perform fast CRUD (Create, Read, Update and Delete) operations and aids visually designing models to map data to databases. 
 This means a reduction of development time and development costs which leads to an easily scalable and maintainable application.
 
+## Deployment Strategy
+The Angular application was built, compressed and stored as a static site along with the Dotnet server files. The files were then dockerized as an Ubuntu (Linux) server using Docker. Then, pushed to the cloud PAAS (Platform as a service) Fly.io. Github actions are now in place to auto dockerize then deploy everytime there is a push to the main branch.
+
 ## Screenshots
 | Home Page  | Signed In |
 | ------------- | ------------- |
