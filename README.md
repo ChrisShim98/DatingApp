@@ -4,7 +4,7 @@
  <img src="https://res.cloudinary.com/diywkaahn/image/upload/v1674050548/Github/Techstacksfinal_jx9ber.png" alt="Tech Stacks">
  </p>
 
-A demo of this application can be viewed <a href="https://bold-meadow-2147.fly.dev/">here<a>.   
+A demo of this application can be viewed <a href="https://bold-meadow-2147.fly.dev/">here</a>.   
 
 <b>Testers can sign on as the demo user by clicking on the demo button or log in as one of the accounts:</b>
 
