@@ -1,6 +1,6 @@
-# fly.toml file generated for bold-meadow-2147 on 2023-01-17T21:30:23-05:00
+# fly.toml file generated for fragrant-haze-2601 on 2023-01-21T21:55:46-05:00
 
-app = "bold-meadow-2147"
+app = "fragrant-haze-2601"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
