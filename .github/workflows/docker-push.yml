@@ -24,7 +24,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: "{{defaultContext}}:API"
+          context: "chrisshim98/datingapp:latest"
           push: true
           tags: chrisshim98/datingapp:latest
   deploy:
