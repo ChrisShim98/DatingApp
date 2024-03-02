@@ -45,3 +45,25 @@
     animation: fa-blink 2s linear infinite;
     color: rgb(1, 189, 42);
 }
+
+@media (max-width: 576px) {
+    .card-img-wrapper {
+        text-align: center;
+    }
+    .member-icons {
+        margin-top: 10px;
+    }
+    .member-icons .btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-title {
+        font-size: 0.9rem;
+    }
+    .card-text {
+        font-size: 0.8rem;
+    }
+}

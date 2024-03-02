@@ -1,17 +1,12 @@
 <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off" *ngIf="!(accountService.currentUser$ | async)">
   <h2 class="text-center text-primary">Login</h2>
-    <hr>
-    <input
-      name="username"
-      [(ngModel)]="model.username"
-      class="form-control me-2 mb-3"
-      type="text" placeholder="Username">
-    <input 
-      name="password"
-      [(ngModel)]="model.password"
-      class="form-control me-2 mb-3" 
-      type="password" 
-      placeholder="Password">
+  <hr>
+  <input name="username" [(ngModel)]="model.username" class="form-control me-2 mb-3" type="text" placeholder="Username">
+  <input name="password" [(ngModel)]="model.password" class="form-control me-2 mb-3" type="password"
+    placeholder="Password">
+
+  <div class="text-center">
     <button class="btn btn-success" type="submit">Login</button>
     <button class="btn btn-default" type="button" (click)="cancel()">Cancel</button>
-  </form>
+  </div>
+</form>

@@ -21,3 +21,10 @@
     -webkit-text-stroke-width: 0.5px;
     -webkit-text-stroke-color: black;
 }
+
+@media (max-width:575px) {
+    .mobileMenu {
+        left: -75px !important;
+        position: absolute;
+    }      
+ } 

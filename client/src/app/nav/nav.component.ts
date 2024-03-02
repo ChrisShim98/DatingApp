@@ -28,7 +28,7 @@ export class NavComponent implements OnInit {
   loginAsGuest() {
     this.model = {
       "username": "Demo",
-      "password": "Test123"
+      "password": "Pa$$w0rd"
     };
     this.login();
   }

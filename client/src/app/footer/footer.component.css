@@ -1,3 +1,10 @@
 .hover-icon:hover {
     color: #2f2e41;
 }
+.footer {
+    min-height: 10vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

@@ -1,8 +1,14 @@
 .dating-container {
-  min-height: 85vh;
+  min-height: 90vh;
   width: 98vw;
-  padding-top: 15vh;
-  padding-bottom: 5vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.dating-container .container {
+  height: 100%;
 }
 
 @media (max-width:767px) {
