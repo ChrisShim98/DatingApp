@@ -1,7 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 .member-tabs > .tab-content {
   background-color: #fff;
   border: 0;
   border-top: 1px solid #eee;
   padding: 15px 0;
+  width: 50vw;
 }
+
+@media (max-width: 767px) {
+  .member-tabs > .tab-content {
+    width: 100%;
+  }
+}
+
+  

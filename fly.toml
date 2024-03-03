@@ -11,8 +11,8 @@ primary_region = 'mia'
 
 [env]
   ASPNETCORE_URLS = 'http://+:8080'
-  CloudinarySettings__ApiKey = '618266582157863'
-  CloudinarySettings__CloudName = 'diywkaahn'
+  CloudinarySettings__ApiKey = '616884638671467'
+  CloudinarySettings__CloudName = 'dhpo94oka'
 
 [http_service]
   internal_port = 8080

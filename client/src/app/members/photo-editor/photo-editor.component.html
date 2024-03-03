@@ -1,5 +1,5 @@
-<div class="row mb-4" *ngIf="member">
-    <div class="col-sm-6 col-md-4 col-lg-3 mb-3" *ngFor="let photo of member.photos">
+<div class="row mb-4 w-100 gap-4" *ngIf="member">
+    <div class="col-sm-6 col-md-4 mb-3 row justify-content-center" *ngFor="let photo of member.photos">
         <img src="{{photo.url}}" alt="photo of user" class="img-thumbnail mb-1">
         <div class="text-center d-flex gap-2 justify-content-center">
             <button 

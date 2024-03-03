@@ -5,3 +5,7 @@
 input[type=file] {
     color: transparent
 }
+
+.img-thumbnail {
+    margin: 25px
+}

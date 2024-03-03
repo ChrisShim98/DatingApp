@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgxGalleryAnimation, NgxGalleryImage, NgxGalleryOptions } from '@kolkov/ngx-gallery';
 import { TabDirective, TabsetComponent } from 'ngx-bootstrap/tabs';
+import { ToastrService } from 'ngx-toastr';
 import { take } from 'rxjs';
 import { Member } from 'src/app/_models/member';
 import { Message } from 'src/app/_models/message';
@@ -25,7 +26,7 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
   messages: Message[] = [];
   user?: User;
 
-  constructor( private accountService: AccountService, private route: ActivatedRoute, 
+  constructor( private accountService: AccountService, private memberService: MembersService, private toastr: ToastrService, private route: ActivatedRoute, 
       private messageService: MessageService, public presenceService: PresenceService,
       private router: Router) {
         this.accountService.currentUser$.pipe(take(1)).subscribe({
@@ -63,6 +64,12 @@ export class MemberDetailComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.messageService.stopHubConnection();
+  }
+
+  addLike(member: Member) {
+    this.memberService.addLike(member.userName).subscribe({
+      next: () => this.toastr.success('You have liked ' + member.knownAs)
+    })
   }
 
   getImages() {
