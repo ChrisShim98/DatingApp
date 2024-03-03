@@ -1,6 +1,6 @@
 # SundayCruise - Dating Web Application
  <p align="center">
- <b>Developed with DotNet 7.0 x Bootstrap 5 x Angular 14</b>
+ <b>Developed with .NET Core 7.0 x Bootstrap 5 x Angular 14</b>
  <img src="https://res.cloudinary.com/dhpo94oka/image/upload/v1709474256/Github/Description/b9ksoex1o7ynsnfcesvq.png" alt="Tech Stacks">
  </p>
 
