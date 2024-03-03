@@ -1,51 +1,62 @@
 # SundayCruise - Dating Web Application
  <p align="center">
- <b>Developed with Angular 14 x Bootstrap 5 x DotNet 7.0</b>
- <img src="https://res.cloudinary.com/diywkaahn/image/upload/v1674050548/Github/Techstacksfinal_jx9ber.png" alt="Tech Stacks">
+ <b>Developed with DotNet 7.0 x Bootstrap 5 x Angular 14</b>
+ <img src="https://res.cloudinary.com/dhpo94oka/image/upload/v1709474256/Github/Description/b9ksoex1o7ynsnfcesvq.png" alt="Tech Stacks">
  </p>
 
-A demo of this application can be viewed <a href="https://fragrant-haze-2601.fly.dev/">here</a>.   
+Visit the [live demo](https://sundaycruise.fly.dev/) to explore the application.
 
-<b>Testers can sign on as the demo user by clicking on the demo button or log in as one of the accounts:</b>
+**Testers can sign in as the demo user by clicking on the demo button or using the following credentials:**
 
-<b>Username:</b> Poole  
-<b>Password:</b> Pa$$w0rd  
+**Username:** Sophie  
+**Password:** Pa$$w0rd
 
-<b>Username:</b> Angela  
-<b>Password:</b> Pa$$w0rd
+**Username:** Ethan  
+**Password:** Pa$$w0rd
 
-## What can this application do?
-In this application, users can:  
-<ol>
-<li>Register for a new account using their username, password and a few details about themselves with reactive forms that inform the user of the required details</li>
-<li>Login to the application securely with a JSON Web Token (JWT), which is used securely transfer information between the dotnet server and the client web application</li>
-<li>Like and message other users in real time</li>
-<li>View if messages have been read or not, as well as the time they were read</li>
-<li>Delete messages from users - messages are only deleted from the database if both users delete the message</li>
-<li>Change the details of their own profile to be viewed by other users</li>
-<li>View the details and pictures of other users</li>
-<li>Upload and store profile photos - these photos are stored on a cloud photo stored solution called "Cloudinary"</li>
-<li>Users can set a main photo, and photos can be deleted only if they are not the main photo</li>
-<li>Track active users and see the last time an account was active - this was implemented using SignalR, which is a WebSocket that continuously checks on the status of client connections</li>
-<li>Sort users by creation date or last active status</li>
-<li>Filter users by their age and gender</li>
-<li>Track the members who the user has liked or the users that liked the user</li>
-<li>Track messages that were sent by the users, tabs for inbox, outbox and new messages</li>
-<li>Admin features: Admins can change the roles of users and moderate photos that were uploaded by regular users</li>
-</ol>
+## Features
 
-## Description of Tech Stacks
-This project is a dating web application that was developed with Angular 14 as the client facing,
-Microsoft .NET Core 7 as the server-side technologies and Bootstrap 5 to strap the design of the application together.
-This application takes advantage of the Google maintained JavaScript framework, Angular, to build highly efficient and lightning-fast
-single-page application. This means that all processes within the can be easily rendered to the user in no time at all.
-Furthermore, this was coupled with ASP.NET Core, which is a cross-platform, high-performance, open-source framework for building modern, cloud-enabled,
-Internet-connected apps maintained by Microsoft. ASP.NET Core, is also packaged, with an object-relational mapper to work with relational data using domain-specific
-objects. It helps to perform fast CRUD (Create, Read, Update and Delete) operations and aids visually designing models to map data to databases. 
-This means a reduction of development time and development costs which leads to an easily scalable and maintainable application.
+1. **Registration:** Users can register for a new account using reactive forms that guide them through the required details.
+2. **Secure Login:** Secure login using JSON Web Tokens (JWT) for communication between the server and client.
+3. **Real-time Interaction:** Users can like and message each other in real-time.
+4. **Message Status:** View message read status and timestamps.
+5. **Message Deletion:** Messages are deleted from the database only when both users delete them.
+6. **Profile Management:** Users can update their profile details and upload profile photos, stored securely on Cloudinary.
+7. **Active User Tracking:** Track active users and their last active status using SignalR.
+8. **User Sorting and Filtering:** Sort users by creation date or last active status and filter by age and gender.
+9. **Like Tracking:** Track liked members and members who liked the user.
+10. **Message Tracking:** View inbox, outbox, and new messages.
+11. **Admin Features:** Administrators can manage user roles and moderate user-uploaded photos.
+
+## Tech Stack Description
+
+This dating web application leverages a combination of cutting-edge technologies to deliver a seamless user experience:
+
+### Frontend:
+- **Angular 14**: Empowering the client-facing aspect of the application, Angular offers a robust framework for building highly efficient single-page applications. With Angular, rendering processes are optimized, ensuring rapid delivery of content to users.
+
+### Backend:
+- **Microsoft .NET Core 7**: Serving as the backbone of the server-side functionalities, .NET Core 7 provides a cross-platform, high-performance framework for developing modern, cloud-enabled applications. It enables seamless integration with various platforms and ensures scalability and reliability.
+- **ASP.NET Core**: Complementing .NET Core, ASP.NET Core is an open-source framework that facilitates the development of Internet-connected apps. It offers features such as an object-relational mapper for efficient data handling and supports rapid CRUD operations. ASP.NET Core streamlines development efforts, reducing both time-to-market and costs.
+
+### Design:
+- **Bootstrap 5**: Responsible for the application's design, Bootstrap 5 offers a comprehensive set of tools and components for creating responsive and visually appealing interfaces. By utilizing Bootstrap, the application benefits from a consistent and polished design, enhancing user engagement and usability.
+
+By integrating these technologies, the dating web application achieves a harmonious blend of performance, scalability, and maintainability, ensuring an exceptional user experience.
 
 ## Deployment Strategy
-The Angular application was built, compressed and stored as a static site along with the Dotnet server files. The files were then dockerized as an Ubuntu (Linux) server using Docker. Then, pushed to the cloud PAAS (Platform as a service) Fly.io. Github actions are now in place to auto dockerize then deploy everytime there is a push to the main branch.
+
+The deployment process for this application involves several steps to ensure seamless delivery:
+
+- **Building and Compression**: The Angular application is built and compressed, along with the Dotnet server files.
+
+- **Dockerization**: The compressed files are dockerized within an Ubuntu (Linux) server environment using Docker containers.
+
+- **Cloud Platform**: The dockerized application is then deployed to a cloud Platform as a Service (PaaS) provider, specifically Fly.io.
+
+- **Automation with GitHub Actions**: GitHub Actions are set up to automate the dockerization and deployment process. Whenever there is a push to the main branch of the repository, GitHub Actions trigger the necessary steps to build, dockerize, and deploy the application.
+
+This deployment strategy ensures efficient deployment of the application, with automatic updates triggered by changes in the main branch of the repository.
 
 ## Screenshots
 | Home Page  | Signed In |
